@@ -51,6 +51,12 @@ body {
   font-size: large;
 }
 
+#btn-contact{
+  background-color: #e6bd43;
+  padding: 10px 20px;
+  border: none;
+}
+
 .footer-navi {
   display: flex;
   justify-content: space-between;
