@@ -24,10 +24,8 @@ body * {
  
 }
 
-header {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row: 1;
+.navi-menu {
+    grid-row:3;
 }
 
 body {
@@ -56,7 +54,7 @@ footer {
 
 .navi-menu{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 20px;
   width: 100%;
@@ -184,8 +182,8 @@ footer {
 @media screen and (max-width : 768px){
   body {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
 
   #video {
@@ -194,6 +192,14 @@ footer {
 
   .headline {
     background-color: #e0d9d9;
+  }
+
+  header{
+    grid-row: 1;
+  }
+  
+  main {
+    grid-row: 2;
   }
   
 }
