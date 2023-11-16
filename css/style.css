@@ -20,11 +20,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.top-logobilde , #bottom-logobilde * {
+  height: 100px;;
+  width: auto;
+  object-fit: contain;  
+}
+
 .navigation-line{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .navi-menu{
@@ -38,13 +44,21 @@ body {
   list-style-type: none;
 }
 
+.navi-menu *{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
 .footer-navi {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 25px 20px;
   width: 100%;
   background-color: #252525;
+
 }
 
 #companyrights {
@@ -69,6 +83,11 @@ body {
   flex-direction: column;
   text-align: center;
   background-color: #e0d9d9;
+}
+
+.headline-article {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .btn-read-more-about {
