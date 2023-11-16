@@ -1,3 +1,6 @@
+/*Mobil-fist principle*/
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -18,6 +21,10 @@ input, button, textarea, select {
 
 body {
   font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr auto;
+ 
 }
 
 .top-logobilde , #bottom-logobilde * {
@@ -96,6 +103,13 @@ body {
   margin-right: 10%;
 }
 
+.headline article h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .btn-read-more-about {
   display: inline-block;
   text-align: center;
@@ -113,4 +127,18 @@ body {
   color: rgb(0, 0, 0);
   width: 100%;
   height: 100%;
+}
+
+#h2-index {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+/*Desktop version*/
+@media screen and (min-width : 768px){
+
 }
