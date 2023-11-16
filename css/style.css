@@ -52,4 +52,5 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100px;
+  list-style-type: none;
 }
