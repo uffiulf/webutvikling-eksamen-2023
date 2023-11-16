@@ -1,6 +1,3 @@
-/*Mobil-fist principle*/
-
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -22,10 +19,26 @@ input, button, textarea, select {
 body {
   font-family: 'Roboto', sans-serif;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto 1fr auto;
- 
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header"
+                        "body"
+                       "footer";
 }
+
+header {
+  grid-area: header;
+}
+
+body {
+  grid-area: body;
+} 
+
+footer {
+  grid-area: footer;
+}
+
+
 
 .top-logobilde , #bottom-logobilde * {
   height: 100px;;
@@ -95,8 +108,35 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: #e0d9d9;
 }
+
+.headline {
+  grid-area: headline;
+  position: relative;
+  overflow: hidden;
+}
+
+.headline * {
+  /* Fjern bakgrunnsfargen her hvis den er satt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
 
 .headline-article {
   margin-left: 10%;
@@ -138,29 +178,20 @@ body {
 
 
 
-/*Desktop version*/
-@media screen and (min-width : 768px){
+/*mobil version*/
+@media screen and (max-width : 768px){
   body {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: "header"
-                          "headline"
-                          "article"
-                          "services"
-                          "footer";
-
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
   }
 
-  header {
-    grid-area: header;
+  #video {
+    display: none;
   }
 
   .headline {
-    grid-area: headline;
+    background-color: #e0d9d9;
   }
-
-  footer {
-    grid-area: footer;
-  }
+  
 }
