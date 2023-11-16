@@ -77,6 +77,13 @@ footer {
   border: none;
 }
 
+#btn-contact:hover {
+  background-color: #000000;
+  color: #e6bd43;
+  cursor: pointer;
+
+}
+
 .footer-navi {
   display: flex;
   justify-content: space-between;
@@ -159,14 +166,22 @@ footer {
   border: none;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  text-decoration: none;
+  color: black;
 }
 
-.btn-read-more-about a{
-  background-color: #e6bd43;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  width: 100%;
-  height: 100%;
+
+
+.btn-read-more-about:hover {
+  background-color: #000000;
+  color: #e6bd43;
+  cursor: pointer;
+}
+
+.btn-read-more-about a:hover {
+  background-color: #000000;
+  color: #e6bd43;
+  cursor: pointer;
 }
 
 #h2-index {
