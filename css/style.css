@@ -25,10 +25,10 @@ body * {
 }
 
 
-
 body {
   grid-row: 2;
 } 
+
 
 footer {
   grid-column-start: 1;
@@ -82,6 +82,30 @@ footer {
   color: #e6bd43;
   cursor: pointer;
 
+}
+
+.line-grey {
+  border-bottom: 1px solid #e0d9d9;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.subheading *{            /*her jobbet jeg sist*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10% 20px 10%;
+  text-align: center;
+}
+
+.services *{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.services-sub {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-navi {
@@ -185,10 +209,10 @@ footer {
 }
 
 #h2-index {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5px;
 }
 
 
