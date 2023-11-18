@@ -6,7 +6,7 @@ css:  https://www.youtube.com/watch?v=2lyDv0wOQuQ    for global konfig
 
 
 
-
+** ikke ha grid i body ??? **
 body * {
   font-family: 'Roboto', sans-serif;
   display: grid;
