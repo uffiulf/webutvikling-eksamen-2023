@@ -363,4 +363,31 @@ justify-content: space-evenly;
   justify-content: center;
   padding-bottom: 5%;
 }
+
+.yellow-our-company {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  background-color: #e6bd43;
+
+}
+
+.placeholder-index {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  margin-bottom: 2%;
+}
+
+.flex-our-company *{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.btn-read-more-about-us {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: block;
+}
 }
