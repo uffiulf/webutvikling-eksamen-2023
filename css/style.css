@@ -155,6 +155,7 @@ padding: 5%;
   align-items: center;
   padding: 5%;
   background-color: #e0d9d9;
+  flex-direction: column;
 }
 
 .newsletter-container #btn-submit {
@@ -169,6 +170,12 @@ padding: 5%;
 .newsletter-container #btn-submit:hover {
   background-color: black;
   color: #e6bd43;
+}
+
+.index-h6 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3%;
 }
 
 
@@ -231,15 +238,14 @@ padding: 5%;
 }
 
 
-
-
 .headline-article {
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.headline article h1 {
-  font-size: 2rem;
+
+#compelling h1 {
+  font-size: 3rem;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 2rem;
