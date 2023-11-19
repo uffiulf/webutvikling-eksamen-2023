@@ -10,7 +10,10 @@
 img, picture, video{
     display: block;
     max-width: 100%;
-    opacity: 0.5;
+}
+
+#video {
+  opacity: 0.5;
 }
 
 input, button, textarea, select {
@@ -58,8 +61,6 @@ body {
   width: auto;
   object-fit: contain;  
 }
-
-
 
 
 #btn-contact{
@@ -332,6 +333,32 @@ justify-content: space-evenly;
   color: white;
 }
 
+/*about*/
+
+.background-pic{
+  background-image:url(/ressurser/ressurser/pen-4337521_1280.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.company-name {
+  background-color: lightgray;
+  opacity: 0.8;
+  grid-column: 2/4;
+  grid-row: 1;
+  margin: 5%;
+}
+
+.company-name article h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  ;
+}
 
 /*mobil version*/
 @media screen and (max-width : 768px){
