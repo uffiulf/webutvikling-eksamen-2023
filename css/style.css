@@ -125,6 +125,7 @@ padding: 5%;
   justify-content: center;
   font-size: 2rem;
   font-weight: bold;
+  padding-top: 5%;
   
 }
 
@@ -136,7 +137,41 @@ padding: 5%;
   list-style: none;
   display: grid;
   grid-template-columns: auto auto auto auto;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
+
+.newsletter-container input[type="text"] {
+  padding: 12px 20px; 
+  height: auto; /* Justerer høyden til å passe innholdet, kan endres til en fast høyde om nødvendig */
+  font-size: 16px; /* Samme fontstørrelse som knappen */
+  border: 2px solid #ddd; /* Eksempel på en border, kan tilpasses */
+  box-sizing: border-box; /* Sørger for at padding ikke legger til ekstra bredde */
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  background-color: #e0d9d9;
+}
+
+.newsletter-container #btn-submit {
+  background-color: #e6bd43;
+  color: black; 
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.newsletter-container #btn-submit:hover {
+  background-color: black;
+  color: #e6bd43;
+}
+
+
 
 .footer-navi {
   display: flex;
@@ -244,6 +279,10 @@ padding: 5%;
   margin-bottom: 5px;
 }
 
+#social-icons * {
+  font-size: 2rem;
+  color: white;
+}
 
 
 /*mobil version*/
