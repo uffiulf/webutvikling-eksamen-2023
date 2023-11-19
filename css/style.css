@@ -67,7 +67,7 @@ body {
   border: none;
 }
 
-#btn-contact:hover {
+#btn-contact:hover ,.btn-read-more-about-us:hover {
   background-color: #000000;
   color: #e6bd43;
   cursor: pointer;
@@ -90,8 +90,8 @@ body {
 
 .yellow-our-company {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
   background-color: #e6bd43;
   width: 100%;
   padding-top: 3%;
@@ -105,7 +105,13 @@ body {
 .our-company-index {
 display: flex;
 flex-direction: column;
-padding: 5%;
+margin-left: 5%;
+}
+
+.our-company-index {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 1;
 }
 
 #h3-index {
@@ -116,8 +122,17 @@ padding: 5%;
 }
 
 .btn-read-more-about-us {                /*her jobbet jeg sist*/
-  border-block: 1px solid black;
-  grid: 1;
+  grid-column: 2;
+  grid-row: 2;
+  margin-left:10%;
+  text-decoration: none;
+  text-align: center;
+  width: 60%;
+  color: black;
+  border-style: solid;
+  padding: 10px;
+  margin-top: -8rem;
+  margin-bottom: 5rem;
 }
 
 .h4-index {
