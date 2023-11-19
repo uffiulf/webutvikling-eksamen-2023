@@ -10,6 +10,7 @@
 img, picture, video{
     display: block;
     max-width: 100%;
+    opacity: 0.5;
 }
 
 input, button, textarea, select {
