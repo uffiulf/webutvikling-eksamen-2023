@@ -32,7 +32,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
   list-style-type: none;
 }
 
@@ -41,15 +40,16 @@ body {
   color: black;
   font-weight: bold;
   font-size: large;
-  width: 100%;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
 
-
-
+.clicked-page {
+  display: inline-block;
+  border-bottom: 2px solid #e6bd43;
+}
 
 
 .top-logobilde , #bottom-logobilde * {
