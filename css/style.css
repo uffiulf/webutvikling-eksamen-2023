@@ -69,7 +69,7 @@ body {
   border: none;
 }
 
-#btn-contact:hover ,.btn-read-more-about-us:hover {
+#btn-contact:hover ,.btn-read-more-about-us:hover ,.btn-get-in-touch:hover {
   background-color: #000000;
   color: #e6bd43;
   cursor: pointer;
@@ -346,10 +346,11 @@ justify-content: space-evenly;
 
 .company-name {
   background-color: lightgray;
-  opacity: 0.8;
+  opacity: 0.9;
   grid-column: 2/4;
   grid-row: 1;
   margin: 5%;
+  padding: 5% 5% 5% 5%;
 }
 
 .company-name article h1{
@@ -357,7 +358,21 @@ justify-content: space-evenly;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  margin-left: 10%
   ;
+}
+
+.company-name article a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;;
+}
+
+.btn-get-in-touch{
+  background-color: #e6bd43;
+  border: none;
+  margin: 5%;
 }
 
 /*mobil version*/
