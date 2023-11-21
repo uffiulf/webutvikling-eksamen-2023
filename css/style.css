@@ -150,15 +150,14 @@ grid-row: 1;
 }
 
 .services-sub {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
   text-decoration: none;
   list-style: none;
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding-top: 5%;
   padding-bottom: 3%;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .newsletter-container input[type="text"] {
@@ -446,16 +445,27 @@ grid-row: 1;
 }
 
 .our-company-index p {
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .placeholder-index img {
   margin: 0;
+  min-width: none;
 }
 
 .btn-read-more-about-us {
   padding: 3%;
+}
+
+.services-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  gap: 60px;
 }
 
 
