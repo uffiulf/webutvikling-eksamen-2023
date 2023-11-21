@@ -357,6 +357,7 @@ justify-content: space-evenly;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  margin-left: 10%
 }
 
 .company-name article a {
@@ -369,6 +370,7 @@ justify-content: space-evenly;
 .btn-get-in-touch{
   background-color: #e6bd43;
   border: none;
+
 }
 
 /*mobil version*/
@@ -428,5 +430,6 @@ justify-content: space-evenly;
   align-items: center;
   margin: auto;
   display: block;
+  margin-top: 3%;
 }
 }
