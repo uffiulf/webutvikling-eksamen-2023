@@ -334,26 +334,25 @@ grid-row: 1;
 .background-pic{
   background-image:url(/ressurser/ressurser/pen-4337521_1280.jpg);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .company-name {
-  background-color: rgba(211, 211, 211, 0.5);
-  grid-column: 3/5;
+  background-color: rgba(211, 211, 211, 0.904);
+  grid-column: 3/6;
   grid-row: 1;
   margin: 5%;
   padding: 5% 5% 5% 5%;
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 
-.company-name article h1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  margin-left: 10%
+#company-name-bread {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .company-name article a {
@@ -363,11 +362,17 @@ grid-row: 1;
   font-size: 1.2rem;;
 }
 
-.btn-get-in-touch{
+.company-name article p {
+  margin-bottom: 25px;
+}
+
+.btn-get-in-touch {
   background-color: #e6bd43;
   border: none;
-
+  padding: 2%;
 }
+
+
 
 /*mobil version*/
 @media screen and (max-width : 768px){
