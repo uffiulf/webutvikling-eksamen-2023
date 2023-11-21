@@ -378,7 +378,21 @@ grid-row: 1;
   }
 
   .headline {
-    background-color: #e0d9d9;
+    position: relative;
+    background-image: url(/ressurser/ressurser/pen-4337521_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .headline::before{     /*fikk hjelp fra chatgp*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.4); 
+    z-index: 1;
   }
 
   .navigation-line {
