@@ -93,7 +93,7 @@ body {
 .yellow-our-company {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   background-color: #e6bd43;
   width: 100%;
   padding-top: 3%;
@@ -105,24 +105,17 @@ body {
 }
 
 .our-company-index {
-display: flex;
-flex-direction: column;
+margin-top: 3rem;
 margin-left: 5%;
-justify-content: space-evenly;
+grid-column-start: 2; 
+grid-column-end: 4;
+grid-row: 1;
 }
 
-.our-company-index {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row: 1;
+.our-company-index p {
+  margin-right: 7rem;
 }
 
-.flex-our-company {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-
-}
 
 #h3-index {
   font-size: 1.5rem;
@@ -132,15 +125,15 @@ justify-content: space-evenly;
 }
 
 .btn-read-more-about-us {                /*her jobbet jeg sist*/
-  grid-column: 2;
-  grid-row: 2;
-  margin-left: 5%;
   text-decoration: none;
   text-align: center;
   width: 200px;
   color: black;
   border-style: solid;
   padding: 10px;
+  display: block;
+  text-align: start;
+  margin-top: 20px;
 }
 
 .h4-index {
@@ -420,11 +413,7 @@ justify-content: space-evenly;
   margin-bottom: 2%;
 }
 
-.flex-our-company *{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
+
 .btn-read-more-about-us {
   justify-content: center;
   align-items: center;
