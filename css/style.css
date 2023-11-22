@@ -408,6 +408,13 @@ grid-row: 1;
   font-size: 2rem;
 }
 
+/*contact us i about*/
+
+.contact-us-container{
+  background-color: rgb(243, 243, 243);
+  
+}
+
 
 /*mobil version*/
 @media screen and (max-width : 768px){

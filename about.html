@@ -84,6 +84,14 @@
                     <img src="ressurser/ressurser/logo3.png" alt="logo3">
                 </section>
             </section>
+            <section class="contact-us-container">
+                <h5>Contact us</h5>
+
+            </section>
+            <div id="map" style="height:400px; width:100%;">
+            
+            </div>
+            
         </main>
         <section class="scroll-top">
             <a href="#top"><i class="fa-solid fa-arrow-up"></i></a> <!-- Plasser denne lenken der du vil ha "scroll to top" funksjonaliteten -->
@@ -108,5 +116,24 @@
             </ul>
         </section>
     </footer>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyC1UYFWfLvZGAHhN4kSm26cMhGwjPmw6X0&callback=initMap">
+    </script>
+    <script>
+        function initMap() {
+            var hiof = {lat: 59.12889903984913, lng: 11.352361331474041};  
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: hiof
+            });
+        
+            var marker = new google.maps.Marker({
+                position: hiof,
+                map: map,
+                title: 'Høgskolen i Østfold'
+            });
+        }
+        </script>
+        
     </body>
 </html>
