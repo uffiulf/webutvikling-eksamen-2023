@@ -420,7 +420,9 @@ grid-row: 1;
   grid-template-rows: auto auto;
   gap: 10%;
   padding: 5%;
+  justify-content: center;
 }
+
 
 #msg-form {
   grid-column: 1/6;
@@ -437,11 +439,11 @@ grid-row: 1;
 }
 
 #contact-us-h5 {
-  grid-column: 2;
-  grid-row: 1;
   font-size: 2rem;
   font-weight: bold;
   padding-top: 5%;
+  grid-column: 2;
+  justify-content: center;
 }
 
 #contact-info-h5 {
