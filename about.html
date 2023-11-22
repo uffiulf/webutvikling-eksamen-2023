@@ -85,13 +85,38 @@
                 </section>
             </section>
             <section class="contact-us-container">
-                <h5>Contact us</h5>
-
+                <h5 id="contact-us-h5">Contact us</h5>
+                <section id="msg-form"> 
+                    <form class="form-container">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                        <label for="Message">Message</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                      </form>
+                </section>
+                <section id="contact-info">
+                    <h5 id="contact-info-h5">Contact information</h5>
+                    <p>Nullam vehicula dolor vitae finibus hendrerit. Nullam sodales imperdiet lectus quis molestie.</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-map-marker"></i>
+                            B R A Veien 4, 1757 Halden
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            +47 69608000
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
+                        </li>
+                    </ul>
+                </section>
             </section>
-            <div id="map" style="height:400px; width:100%;">
-            
-            </div>
-            
+
+            <div id="map" style="height:400px; width:100%;">  </div>
         </main>
         <section class="scroll-top">
             <a href="#top"><i class="fa-solid fa-arrow-up"></i></a> <!-- Plasser denne lenken der du vil ha "scroll to top" funksjonaliteten -->
@@ -119,7 +144,6 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfX8MezIh_6VseeEj-Qz4zwHWICX0UtdU&callback=initMap">
     </script>
-
     <script>
         function initMap() {
             var hiof = {lat: 59.12889903984913, lng: 11.352361331474041};  
