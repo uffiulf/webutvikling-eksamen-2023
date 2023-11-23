@@ -444,6 +444,7 @@ grid-row: 1;
 .form-container input {
   height: 30px;
   width: 80%;
+  padding: 20px;
 }
 
 
@@ -455,7 +456,10 @@ grid-row: 1;
 .btn-send-msg {
   background-color: #e6bd43;
   border: none;
-  padding: 2%;
+  padding: 10px;
+  margin-top: auto;
+  font-weight: bold;
+  
 }
 
 #contact-us-h5 {
@@ -588,7 +592,26 @@ grid-row: 1;
   padding-top: 10%;
   padding-bottom: 10%;
   gap: 60px;
+  font-size: 2rem;
 }
+
+.services-sub h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.h4-index{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.services-sub p {
+  margin-top: 1rem;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+
 
 /*about mobil*/
 
@@ -608,7 +631,56 @@ grid-row: 1;
   flex-basis: 40%;   /*fikk hjelp fra chatgp*/
   width: 100px;
   height: auto;
+  margin-bottom: 30px;
 }
+
+.background-pic{
+  background-image:url(/ressurser/ressurser/pen-4337521_1280.jpg);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+}
+
+.some-of-our-clients h4 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#contact-us-h5{
+  font-size: 1.5rem;
+}
+
+.contact-us-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  justify-items: center;
+}
+
+#contact-us-h5 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#msg-form {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+}
+
+#contact-info {
+  grid-column: 1;
+  grid-row: 3;
+  margin: 0;
+}
+
+
 
 
 
