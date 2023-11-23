@@ -435,8 +435,21 @@ grid-row: 1;
   align-items: start;
 }
 
+.form-container *{
+    border: none;
+    outline: none;
+    margin: 4px;
+}
+
+.form-container input {
+  height: 30px;
+  width: 80%;
+}
+
+
 #message {
   margin-bottom: 20px;
+  width: 80%;
 }
 
 .btn-send-msg {
@@ -468,8 +481,7 @@ grid-row: 1;
 
 #contact-info ul li {
   list-style-type: none;
-  margin-bottom: 10px;
-  
+  margin-top: 20px;
 }
 
 
