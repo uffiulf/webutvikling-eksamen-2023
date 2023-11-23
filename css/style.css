@@ -316,7 +316,7 @@ grid-row: 1;
   color: white;
 }
 
-.btn-read-more-about:hover {
+.btn-read-more-about:hover , .btn-send-msg:hover {
   background-color: #000000;
   color: #e6bd43;
   cursor: pointer;
@@ -426,7 +426,7 @@ grid-row: 1;
 #msg-form {
   grid-column: 1/3;
   grid-row: 2;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .form-container {
@@ -435,23 +435,35 @@ grid-row: 1;
   align-items: start;
 }
 
+#message {
+  margin-bottom: 20px;
+}
+
+.btn-send-msg {
+  background-color: #e6bd43;
+  border: none;
+  padding: 2%;
+}
+
 #contact-us-h5 {
   font-size: 2rem;
   font-weight: bold;
   padding-top: 5%;
+  margin-bottom: 15%;
   grid-column: 2;;
   text-align: center;
 }
 
-#contact-info-h5 {
+#contact-info-h5 , .form-container h6{
   font-weight: bold;
   font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 #contact-info {
   grid-column: 3;
   grid-row: 2;
-  margin-right: 10%;
+  margin-right: 15%;
 }
 
 #contact-info ul li {
