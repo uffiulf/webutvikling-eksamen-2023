@@ -374,6 +374,32 @@ margin-left: 3%;
   z-index: 2;
 }
 
+.explore-prev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explore-prev h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  display: inline-block;
+  border-bottom: 2px solid #e6bd43;
+  width: 95%;
+
+
+
+}
+
+.tiles-container{
+  display: flex;
+  justify-content: space-between
+}
+
+
+
 /*about*/
 
 .background-pic{
