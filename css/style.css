@@ -417,16 +417,40 @@ margin-left: 3%;
 .branding-sub-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto;
   gap: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-  width: 95%;
+  width: 95%; 
+}
+
+.branding-sub-container figure {
+  flex-grow: 1;
+}
+
+#figure4-container {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  width: auto
+}
+
+
+#figure1-ID {
+  flex-grow: 1;
+}
+
+#figure2-ID {
+  flex-grow: 2;
+}
+
+#figure3-ID {
+  flex-grow: 3;
 }
 
 #figure4-ID {
+  flex-grow: 4;
+  max-width: 692px;
   height: auto;
-  max-width: 600px;
 }
 
 
