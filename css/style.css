@@ -649,6 +649,10 @@ margin-left: 3%;
 
 /*about mobil*/
 
+.btn-get-in-touch {
+  padding: 1rem;
+}
+
 .client-logo{
   display: grid;
   grid-template-columns: 1fr;
