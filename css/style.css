@@ -136,7 +136,7 @@ margin-left: 3%;
   border-style: solid;
   padding: 10px;
   display: block;
-  text-align: start;
+  text-align: center;
   margin-top: 20px;
   font-weight: bold;
 }
@@ -415,42 +415,44 @@ margin-left: 3%;
 }
 
 .branding-sub-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-  width: 95%; 
+  width: 95%;
 }
 
-.branding-sub-container figure {
-  flex-grow: 1;
+.branding-sub-container figure * {
+  min-width: 200px;
 }
 
 #figure4-container {
-  grid-column: 1/4;
-  grid-row: 2/3;
   width: auto
 }
 
 
 #figure1-ID {
   flex-grow: 1;
+  max-width: 350px;
 }
 
 #figure2-ID {
   flex-grow: 2;
+  max-width: 350px;
 }
 
 #figure3-ID {
   flex-grow: 3;
+  max-width: 350px;
 }
 
 #figure4-ID {
   flex-grow: 4;
   max-width: 692px;
-  height: auto;
+  height: 500px;
+  
 }
 
 
@@ -735,6 +737,35 @@ margin-left: 3%;
   margin-left: 15%;
 }
 
+/*portfolio mobil*/
+.tiles-container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.tiles-container * {
+  margin: 2%;
+}
+
+#development-id {
+  margin-right: 500px;
+}
+
+.explore-prev h2, .tiles-container{
+ width: 80%;
+}
+
+.branding-h3, .branding-sub-container {
+  width: 80%;
+  justify-content: center;
+}
+
+#figure4-ID {
+  margin-top: 0;
+  flex-grow: 0;
+  max-width: 350px;
+}
 
 
 /*about mobil*/
