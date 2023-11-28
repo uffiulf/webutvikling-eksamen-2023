@@ -38,40 +38,40 @@
                 </ul>
             </nav>
         </header>
-        <main> 
+        <main itemscope itemtype="http://schema.org/LocalBusiness"> 
             <section class="background-pic">
                 <section class="company-name">
                     <article> 
-                        <p id="company-name-bread">Company name</p>
+                        <p id="company-name-bread" itemprop="name">Company name</p>
                         <h1>About Our company</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit ex sed diam egestas, sed malesuada purus pellentesque. Aenean sed rhoncus mauris. Vestibulum at lacus risus. Proin in lorem venenatis turpis pellentesque malesuada ut et ante. Phasellus dictum mi a congue molestie. Donec dignissim condimentum fringilla.</p>
-                            <a href="about.html" class="btn-get-in-touch">Get in touch with us</a>
+                            <a href="#contact-us-h5" class="btn-get-in-touch">Get in touch with us</a>
                     </article>
                 </section>   
             </section>
             <h3 class="h4-index">Our services</h3>
             <section class="services">
                 <nav>
-                    <ul class="services-sub">
-                        <li>
+                    <ul class="services-sub" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
+                        <li itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
                             <i class="fa-solid fa-users"></i>
-                            <h5>Branding</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h5 itemprop="name">Branding</h5>
+                            <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </li>
-                        <li>
+                        <li itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
                             <i class="fa-solid fa-cloud-arrow-up"></i>
-                            <h5>Design</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h5 itemprop="name">Design</h5>
+                            <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </li>
-                        <li>
+                        <li itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
                             <i class="fa-solid fa-code"></i>
-                            <h5>Development</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h5 itemprop="name">Development</h5>
+                            <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </li>
-                        <li>
+                        <li itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
                             <i class="fa-solid fa-wifi"></i>
-                            <h5>Support</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h5 itemprop="name">Support</h5>
+                            <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </li>
                     </ul>
                 </nav>
@@ -102,23 +102,30 @@
                     <h5 id="contact-info-h5">Contact information</h5>
                     <p>Nullam vehicula dolor vitae finibus hendrerit. Nullam sodales imperdiet lectus quis molestie.</p>
                     <ul>
-                        <li>
+                        <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <i class="fa-solid fa-map-marker"></i>
-                            B R A Veien 4, 1757 Halden
+                            <span itemprop="streetAddress">
+                                B R A Veien 4, 1757 Halden
+                            </span>
                         </li>
                         <li>
                             <i class="fa-solid fa-phone"></i>
-                            +47 69608000
+                            <span itemprop="telephone">
+                                +47 69608000
+                            </span>
+                             
                         </li>
                         <li>
                             <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
+                            <span itemprop="email">
+                                <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
+                            </span>
                         </li>
                     </ul>
                 </section>
             </section>
 
-            <div id="map" style="height:400px; width:100%;">  </div>
+            <div id="map" style="height:400px; width:100%;"></div>
         </main>
         <section class="scroll-top">
             <a href="#top"><i class="fa-solid fa-arrow-up"></i></a> <!-- Plasser denne lenken der du vil ha "scroll to top" funksjonaliteten -->
@@ -126,7 +133,7 @@
         </section>
     <footer class="footer-navi">
         <span id="bottom-logobilde">
-            <img src="ressurser/ressurser/logo1.png" alt="logobilde">
+            <a href="index.html"><img src="ressurser/ressurser/logo1.png" alt="logobilde"></a>
         </span>
         <p id="companyrights">Companyrights Companyname 2023</p>
         <section>
