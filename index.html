@@ -20,8 +20,8 @@
     <body>
         <a id="top"></a> <!-- Plasser dette helt øverst på siden -->
         <header>
-            <nav class="navigation-line">
-                <a href="index.html"><img src="ressurser/ressurser/logo1.png" class="top-logobilde" alt="logobilde"></a>
+            <nav class="navigation-line" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="index.html"><img itemprop="logo" src="ressurser/ressurser/logo1.png" class="top-logobilde" alt="logobilde"></a>
                 <ul class="navi-menu">
                     <li class="clicked-page">
                         <a href="index.html">Home</a>
@@ -38,7 +38,9 @@
                 </ul>
             </nav>
         </header>
-        <main> 
+        <main itemscope itemtype="http://schema.org/LocalBusiness"> 
+            <meta itemprop="name" content="Firmanavn">
+            <meta itemprop="description" content="superfirma">
             <section class="headline">
                     <video id="video" autoplay muted loop>
                         <source src="ressurser/ressurser/mountains.mp4" type="video/mp4">
